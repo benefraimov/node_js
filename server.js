@@ -24,7 +24,7 @@ const globalLimiter = rateLimit({
 
 // זו ההפעלה של ההגדרה
 app.use(globalLimiter)
-app.use(cors({origin: "https://node-js-mfxg.onrender.com"}))
+app.use(cors({origin: "http://localhost:6001"}))
 
 // middleware to parse JSON body
 app.use(express.json())
